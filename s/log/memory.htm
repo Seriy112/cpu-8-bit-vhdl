@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+
+<!----------------------------------------------------------------------------->
+<!--                          BEGIN HTML HEAD                                -->
+<!--                                                                         -->
+
+<HEAD>
+<TITLE>DRC Report File - memory.bde</TITLE>
+<STYLE>
+.Err	{color:'#FF0000';cursor:hand;text-decoration:underline;}
+.Warn	{color:'#0000FF';cursor:hand;text-decoration:underline;}
+.Info	{color:'#000000';cursor:hand;text-decoration:underline;}
+.Sccss  {color:'#009600';cursor:hand;text-decoration:underline;}
+.ErrH	{color:'#FF0000';cursor:hand;text-decoration:underline;}
+.WarnH	{color:'#0000FF';cursor:hand;text-decoration:underline;}
+.InfoH	{color:'#000000';cursor:hand;text-decoration:underline;}
+.Err1	{color:'#FF0000';}
+.Warn1	{color:'#0000FF';}
+.Info1	{color:'#000000';}
+.Sccss1 {color:'#009600';}
+</STYLE>
+</HEAD>
+<BODY BGCOLOR="white" TEXT="black" LINK="blue" VLINK="purple" BACKGROUND="C:\Program Files (x86)\Aldec\Active-HDL 7.1\\Flows\Res\default.bmp">
+<FONT FACE="Serif">
+<tt>
+<!--                                                                         -->
+<!--                             END HEADER                                  -->
+<!----------------------------------------------------------------------------->
+
+<!----------------------------------------------------------------------------->
+<!--                            BEGIN VBSCRIPT                               -->
+<!--                                                                         -->
+<SCRIPT LANGUAGE=JSCRIPT>
+	function RollOn() {
+		switch(window.event.srcElement.className) {
+			case 'Err':
+				window.event.srcElement.className = 'ErrH'; break;
+			case 'Warn':
+				window.event.srcElement.className = 'WarnH'; break;
+			case 'Info':
+				window.event.srcElement.className = 'InfoH'; break;
+		}
+	}
+	function RollOff() {
+		switch(window.event.srcElement.className) {
+			case 'ErrH':
+				window.event.srcElement.className = 'Err'; break;
+			case 'WarnH':
+				window.event.srcElement.className = 'Warn'; break;
+			case 'InfoH':
+				window.event.srcElement.className = 'Info'; break;
+		}
+	}
+	function OnError(sMsg,sUrl,sLine) {
+		return true;
+	}
+	
+	document.onmouseover = RollOn;
+	document.onmouseout = RollOff;
+	window.onerror = OnError;
+</SCRIPT>
+
+<SCRIPT LANGUAGE=VBSCRIPT>
+
+Function IID_IDispatch
+	IID_IDispatch = "{00020400-0000-0000-C000-000000000046}"
+End Function
+
+Function CLSID_Executor
+	CLSID_Executor = "Aldec.ExePlugIn.Generic.7"
+End Function
+
+
+Sub OpenPlugIn (progid, template, document, element, string)
+
+	Dim executor, command
+
+	Set executor = window.external.aldec.connector.OpenPlugIn(CLSID_Executor, IID_IDispatch)
+
+	command = "?Activate[<"+progid+">][<"+template+">][<"+document+">][<"+element+">][<"+string+">]"
+
+	executor.ExecuteCommand command, ""
+
+End Sub
+
+
+</SCRIPT>
+<!--                                                                         -->
+<!--                             END VBSCRIPT                                -->
+<!----------------------------------------------------------------------------->
+
+<H2>DRC Report File - memory.bde</H2>
+Created on Fri 2016-05-13 at 01:12:58
+<HR NOSHADE COLOR="#008080">
+<SPAN class=Info1>Checking file 'c:\My_Designs\s\s\src\memory.bde'.</SPAN><BR>
+<SPAN class=Warn onclick="OpenPlugIn('Aldec.BDE.7','0','c:\\My_Designs\\s\\s\\src\\memory.bde','','-errorid=64');">Net 'Memory(1:59)' is without source.</SPAN><BR>
+<SPAN class=Warn onclick="OpenPlugIn('Aldec.BDE.7','0','c:\\My_Designs\\s\\s\\src\\memory.bde','','-errorid=64');">Multiple sources connected to net 'Memory(0)'.</SPAN><BR>
+<SPAN class=Warn onclick="OpenPlugIn('Aldec.BDE.7','0','c:\\My_Designs\\s\\s\\src\\memory.bde','','-errorid=64');">Net 'Memory(1:59)' is without load.</SPAN><BR>
+<SPAN class=Warn onclick="OpenPlugIn('Aldec.BDE.7','0','c:\\My_Designs\\s\\s\\src\\memory.bde','','-errorid=64,3,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53');">Different index ranges 'Memory(0:59), refp_process_66_.PSS77, refs_block_14_.PSS80, refs_block_15_.PSS81, refs_block_16_.PSS82, refs_block_17_.PSS83, refs_block_18_.PSS84, refs_block_19_.PSS85, refs_block_20_.PSS86, refs_block_22_.PSS87, refs_block_23_.PSS88, refs_block_24_.PSS89, refs_block_25_.PSS90, refs_block_26_.PSS91, refs_block_27_.PSS92, refs_block_28_.PSS93, refs_block_30_.PSS94, refs_block_31_.PSS95, refs_block_32_.PSS96, refs_block_33_.PSS97, refs_block_34_.PSS98, refs_block_35_.PSS99, refs_block_36_.PSS100, refs_block_37_.PSS101, refs_block_38_.PSS102, refs_block_39_.PSS103, refs_block_40_.PSS104, refs_block_41_.PSS105, refs_block_42_.PSS106, refs_block_44_.PSS107, refs_block_45_.PSS108, refs_block_46_.PSS109, refs_block_47_.PSS110, refs_block_48_.PSS111, refs_block_49_.PSS112, refs_block_50_.PSS113, refs_block_51_.PSS114, refs_block_52_.PSS115, refs_block_53_.PSS116, refs_block_54_.PSS117, refs_block_55_.PSS118, refs_block_57_.PSS119, refs_block_58_.PSS120, refs_block_59_.PSS121, refs_block_60_.PSS122, refs_block_61_.PSS123, refs_block_62_.PSS124, refs_block_63_.PSS125, refs_block_64_.PSS126, refs_block_65_.PSS127' in a bus node.</SPAN><BR>
+<SPAN class=Warn1>memory.bde - 0 error(s), 4 warning(s)</SPAN><BR>
+<SPAN class=Info1>DRC process completed in 1 second(s).</SPAN><BR>
+</tt>
+</FONT>
+       
+        >
+</BODY>
+</HTML>

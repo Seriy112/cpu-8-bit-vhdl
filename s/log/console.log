@@ -1,0 +1,522 @@
+run 100 ns
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DD16,  Process: line__13.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DD16,  Process: line__13.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DD16,  Process: line__13.
+# KERNEL: stopped at time: 100 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 100 ns,  Iteration: 2,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 100 ns,  Iteration: 2,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 100 ns,  Iteration: 2,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 100 ns,  Iteration: 2,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 100 ns,  Iteration: 2,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 100 ns,  Iteration: 2,  Instance: /DD18,  Process: line__66.
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+endsim
+#  Simulation has been stopped
+asim -advdataflow  mpa mpa
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 2017 kB (elbread=1032 elab2=675 kernel=310 sdf=0)
+#  12:20, 13 мая 2016 г.
+#  Simulation has been initialized
+#  Selected Top-Level: mpa (mpa)
+run 100 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DD10,  Process: line__17.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 50 ns,  Iteration: 1,  Instance: /DD16,  Process: line__13.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 50 ns,  Iteration: 1,  Instance: /DD16,  Process: line__13.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 50 ns,  Iteration: 1,  Instance: /DD16,  Process: line__13.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 50 ns,  Iteration: 1,  Instance: /DD16,  Process: line__13.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 50 ns,  Iteration: 1,  Instance: /DD16,  Process: line__13.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 50 ns,  Iteration: 1,  Instance: /DD16,  Process: line__13.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+run 100 ns
+# KERNEL: stopped at time: 600 ns
+run 100 ns
+# KERNEL: stopped at time: 700 ns
+endsim
+#  Simulation has been stopped
+asim -advdataflow  mpa mpa
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 2017 kB (elbread=1032 elab2=675 kernel=310 sdf=0)
+#  12:21, 13 мая 2016 г.
+#  Simulation has been initialized
+#  Selected Top-Level: mpa (mpa)
+run 100 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DD10,  Process: line__17.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 50 ns,  Iteration: 1,  Instance: /DD16,  Process: line__13.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 50 ns,  Iteration: 1,  Instance: /DD16,  Process: line__13.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 50 ns,  Iteration: 1,  Instance: /DD16,  Process: line__13.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 50 ns,  Iteration: 1,  Instance: /DD16,  Process: line__13.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 50 ns,  Iteration: 1,  Instance: /DD16,  Process: line__13.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 50 ns,  Iteration: 1,  Instance: /DD16,  Process: line__13.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+run 100 ns
+# KERNEL: stopped at time: 600 ns
+run 100 ns
+# KERNEL: stopped at time: 700 ns
+# Error: missing close-brace
+# Error: missing close-brace
+# Error: missing close-brace
+# Error: missing close-brace
+# Error: missing close-brace
+# Error: missing close-brace
+# Error: missing close-brace
+# Error: missing close-brace
+# Error: missing close-brace
+# Error: missing close-brace
+# Error: missing close-brace
+# Error: missing close-brace
+# Error: missing close-brace
+# Error: missing close-brace
+# Error: missing close-brace
+# Error: missing close-brace
+# Error: missing close-brace
+# Error: missing close-brace
+# Error: missing close-brace
+# Error: missing close-brace
+# Error: missing close-brace
+acom $DSN/src/add.vhdl $DSN/src/alu.vhdl $DSN/src/car.vhdl $DSN/src/cbr.vhdl $DSN/src/clk.vhdl $DSN/src/cpu.vhdl $DSN/src/dc1.vhdl $DSN/src/inv.vhdl $DSN/src/ir.vhdl $DSN/src/logand.vhdl $DSN/src/logor.vhdl $DSN/src/mar.vhdl $DSN/src/mbr.vhdl $DSN/src/memory.vhdl $DSN/src/mux.vhdl $DSN/src/ra.vhdl $DSN/src/ram.vhdl $DSN/src/rdc.vhdl $DSN/src/ron.vhdl $DSN/src/rz.vhdl $DSN/src/r_1bit.vhdl
+# Compile...
+# File: D:\University\Курсовая\s\s\src\add.vhdl
+# Compile Entity "Add"
+# Compile Architecture "Add" of Entity "Add"
+# File: D:\University\Курсовая\s\s\src\alu.vhdl
+# Compile Entity "ALU"
+# Compile Architecture "ALU" of Entity "ALU"
+# File: D:\University\Курсовая\s\s\src\car.vhdl
+# Compile Entity "CAR"
+# Compile Architecture "CAR" of Entity "CAR"
+# File: D:\University\Курсовая\s\s\src\cbr.vhdl
+# Compile Entity "CBR"
+# Compile Architecture "CBR" of Entity "CBR"
+# File: D:\University\Курсовая\s\s\src\clk.vhdl
+# Compile Entity "PC"
+# Compile Architecture "PC" of Entity "PC"
+# File: D:\University\Курсовая\s\s\src\cpu.vhdl
+# Compile Entity "MPA"
+# Compile Architecture "MPA" of Entity "MPA"
+# File: D:\University\Курсовая\s\s\src\dc1.vhdl
+# Compile Entity "DC1"
+# Compile Architecture "DC1" of Entity "DC1"
+# File: D:\University\Курсовая\s\s\src\inv.vhdl
+# Compile Entity "INV"
+# Compile Architecture "INV" of Entity "INV"
+# File: D:\University\Курсовая\s\s\src\ir.vhdl
+# Compile Entity "IR"
+# Compile Architecture "IR" of Entity "IR"
+# File: D:\University\Курсовая\s\s\src\logAnd.vhdl
+# Compile Entity "LogAnd"
+# Compile Architecture "LogAnd" of Entity "LogAnd"
+# File: D:\University\Курсовая\s\s\src\logOr.vhdl
+# Compile Entity "LogOR"
+# Compile Architecture "LogOR" of Entity "LogOR"
+# File: D:\University\Курсовая\s\s\src\mar.vhdl
+# Compile Entity "MAR"
+# Compile Architecture "MAR" of Entity "MAR"
+# File: D:\University\Курсовая\s\s\src\mbr.vhdl
+# Compile Entity "MBR"
+# Compile Architecture "MBR" of Entity "MBR"
+# File: D:\University\Курсовая\s\s\src\memory.vhdl
+# Compile Entity "Memory"
+# Compile Architecture "Memory" of Entity "Memory"
+# File: D:\University\Курсовая\s\s\src\mux.vhdl
+# Compile Entity "MUX"
+# Compile Architecture "MUX" of Entity "MUX"
+# File: D:\University\Курсовая\s\s\src\ra.vhdl
+# Compile Entity "RA"
+# Compile Architecture "RA" of Entity "RA"
+# File: D:\University\Курсовая\s\s\src\ram.vhdl
+# Compile Entity "RAM"
+# Compile Architecture "RAM" of Entity "RAM"
+# File: D:\University\Курсовая\s\s\src\rdc.vhdl
+# Compile Entity "RDC"
+# Compile Architecture "RDC" of Entity "RDC"
+# File: D:\University\Курсовая\s\s\src\ron.vhdl
+# Compile Entity "R0"
+# Compile Architecture "R0" of Entity "R0"
+# File: D:\University\Курсовая\s\s\src\rz.vhdl
+# Compile Entity "RZ"
+# Compile Architecture "RZ" of Entity "RZ"
+# File: D:\University\Курсовая\s\s\src\r_1bit.vhdl
+# Compile Entity "R_1bit"
+# Compile Architecture "R_1bit" of Entity "R_1bit"
+# Compile success 0 Errors 0 Warnings  Analysis time :  4.0 [s]
+endsim
+#  Simulation has been stopped
+asim -advdataflow  mpa mpa
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 2017 kB (elbread=1032 elab2=675 kernel=310 sdf=0)
+#  12:24, 13 мая 2016 г.
+#  Simulation has been initialized
+#  Selected Top-Level: mpa (mpa)
+run 100 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DD10,  Process: line__17.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 50 ns,  Iteration: 1,  Instance: /DD16,  Process: line__13.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 50 ns,  Iteration: 1,  Instance: /DD16,  Process: line__13.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 50 ns,  Iteration: 1,  Instance: /DD16,  Process: line__13.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 50 ns,  Iteration: 1,  Instance: /DD16,  Process: line__13.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 50 ns,  Iteration: 1,  Instance: /DD16,  Process: line__13.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 50 ns,  Iteration: 1,  Instance: /DD16,  Process: line__13.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+run 100 ns
+# KERNEL: stopped at time: 600 ns
+run 100 ns
+# KERNEL: stopped at time: 700 ns
+run 100 ns
+# KERNEL: stopped at time: 800 ns
+run 100 ns
+# KERNEL: stopped at time: 900 ns
+run 100 ns
+# KERNEL: stopped at time: 1 us
+run 100 ns
+# KERNEL: stopped at time: 1100 ns
+# Error: missing close-brace
+# Error: missing close-brace
+# Error: missing close-brace
+# Error: missing close-brace
+endsim
+#  Simulation has been stopped
+asim -advdataflow  mpa mpa
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 2017 kB (elbread=1032 elab2=675 kernel=310 sdf=0)
+#  13:05, 13 мая 2016 г.
+#  Simulation has been initialized
+#  Selected Top-Level: mpa (mpa)
+run 100 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DD10,  Process: line__17.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 50 ns,  Iteration: 1,  Instance: /DD16,  Process: line__13.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 50 ns,  Iteration: 1,  Instance: /DD16,  Process: line__13.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 50 ns,  Iteration: 1,  Instance: /DD16,  Process: line__13.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 50 ns,  Iteration: 1,  Instance: /DD16,  Process: line__13.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 50 ns,  Iteration: 1,  Instance: /DD16,  Process: line__13.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 50 ns,  Iteration: 1,  Instance: /DD16,  Process: line__13.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: stopped at time: 100 ns
+endsim
+#  Simulation has been stopped
+asim -advdataflow  mpa mpa
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 2017 kB (elbread=1032 elab2=675 kernel=310 sdf=0)
+#  13:05, 13 мая 2016 г.
+#  Simulation has been initialized
+#  Selected Top-Level: mpa (mpa)
+run 100 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DD10,  Process: line__17.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 50 ns,  Iteration: 1,  Instance: /DD16,  Process: line__13.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 50 ns,  Iteration: 1,  Instance: /DD16,  Process: line__13.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 50 ns,  Iteration: 1,  Instance: /DD16,  Process: line__13.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 50 ns,  Iteration: 1,  Instance: /DD16,  Process: line__13.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 50 ns,  Iteration: 1,  Instance: /DD16,  Process: line__13.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 50 ns,  Iteration: 1,  Instance: /DD16,  Process: line__13.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+endsim
+#  Simulation has been stopped
+asim -advdataflow  mpa mpa
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# asim: Stack memory: 32MB
+# asim: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 2017 kB (elbread=1032 elab2=675 kernel=310 sdf=0)
+#  13:25, 13 мая 2016 г.
+#  Simulation has been initialized
+#  Selected Top-Level: mpa (mpa)
+run 100 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /DD10,  Process: line__17.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 50 ns,  Iteration: 1,  Instance: /DD16,  Process: line__13.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 50 ns,  Iteration: 1,  Instance: /DD16,  Process: line__13.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 50 ns,  Iteration: 1,  Instance: /DD16,  Process: line__13.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 50 ns,  Iteration: 1,  Instance: /DD16,  Process: line__13.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 50 ns,  Iteration: 1,  Instance: /DD16,  Process: line__13.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 50 ns,  Iteration: 1,  Instance: /DD16,  Process: line__13.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+# KERNEL: Time: 100 ns,  Iteration: 1,  Instance: /DD18,  Process: line__66.
+# KERNEL: WARNING: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an a

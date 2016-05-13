@@ -1,0 +1,253 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+
+<!----------------------------------------------------------------------------->
+<!--                          BEGIN HTML HEAD                                -->
+<!--                                                                         -->
+
+<HEAD>
+<TITLE>Code2Graphics generation results</TITLE>
+<STYLE>
+.Err	{color:'#FF0000';cursor:hand;text-decoration:underline;}
+.Warn	{color:'#0000FF';cursor:hand;text-decoration:underline;}
+.Info	{color:'#000000';cursor:hand;text-decoration:underline;}
+.Sccss  {color:'#009600';cursor:hand;text-decoration:underline;}
+.ErrH	{color:'#FF0000';cursor:hand;text-decoration:underline;}
+.WarnH	{color:'#0000FF';cursor:hand;text-decoration:underline;}
+.InfoH	{color:'#000000';cursor:hand;text-decoration:underline;}
+.Err1	{color:'#FF0000';}
+.Warn1	{color:'#0000FF';}
+.Info1	{color:'#000000';}
+.Sccss1 {color:'#009600';}
+</STYLE>
+</HEAD>
+<BODY BGCOLOR="white" TEXT="black" LINK="blue" VLINK="purple" BACKGROUND="C:\Program Files (x86)\Aldec\Active-HDL 7.1\\Flows\Res\default.bmp">
+<FONT FACE="Serif">
+<tt>
+<!--                                                                         -->
+<!--                             END HEADER                                  -->
+<!----------------------------------------------------------------------------->
+
+<!----------------------------------------------------------------------------->
+<!--                            BEGIN VBSCRIPT                               -->
+<!--                                                                         -->
+<SCRIPT LANGUAGE=JSCRIPT>
+	function RollOn() {
+		switch(window.event.srcElement.className) {
+			case 'Err':
+				window.event.srcElement.className = 'ErrH'; break;
+			case 'Warn':
+				window.event.srcElement.className = 'WarnH'; break;
+			case 'Info':
+				window.event.srcElement.className = 'InfoH'; break;
+		}
+	}
+	function RollOff() {
+		switch(window.event.srcElement.className) {
+			case 'ErrH':
+				window.event.srcElement.className = 'Err'; break;
+			case 'WarnH':
+				window.event.srcElement.className = 'Warn'; break;
+			case 'InfoH':
+				window.event.srcElement.className = 'Info'; break;
+		}
+	}
+	function OnError(sMsg,sUrl,sLine) {
+		return true;
+	}
+	
+	document.onmouseover = RollOn;
+	document.onmouseout = RollOff;
+	window.onerror = OnError;
+</SCRIPT>
+
+<SCRIPT LANGUAGE=VBSCRIPT>
+
+Function IID_IDispatch
+	IID_IDispatch = "{00020400-0000-0000-C000-000000000046}"
+End Function
+
+Function CLSID_Executor
+	CLSID_Executor = "Aldec.ExePlugIn.Generic.7"
+End Function
+
+
+Sub OpenPlugIn (progid, template, document, element, string)
+
+	Dim executor, command
+
+	Set executor = window.external.aldec.connector.OpenPlugIn(CLSID_Executor, IID_IDispatch)
+
+	command = "?Activate[<"+progid+">][<"+template+">][<"+document+">][<"+element+">][<"+string+">]"
+
+	executor.ExecuteCommand command, ""
+
+End Sub
+
+
+</SCRIPT>
+<!--                                                                         -->
+<!--                             END VBSCRIPT                                -->
+<!----------------------------------------------------------------------------->
+
+<H2>Code2Graphics generation results</H2>
+Created on Fri 2016-05-13 at 01:12:25
+<HR NOSHADE COLOR="#008080">
+<SPAN class=Info1>CODE2GRAPHICS SETTINGS:</SPAN><BR>
+<SPAN class=Info1> </SPAN><BR>
+<SPAN class=Info1>Multipage block diagrams generation: DISABLED</SPAN><BR>
+<SPAN class=Info1>Hierarchical state diagrams generation: DISABLED</SPAN><BR>
+<SPAN class=Info1>Destination directory: c:\My_Designs\s\s\src</SPAN><BR>
+<SPAN class=Info1> </SPAN><BR>
+<SPAN class=Info1>INTERMEDIATE FILES GENERATION:</SPAN><BR>
+<SPAN class=Info1> </SPAN><BR>
+<SPAN class=Info1>Analyzing intermediate file C:\Users\D-link\AppData\Local\Temp\s\s.erf ...</SPAN><BR>
+<SPAN class=Info1>File: C:\My_Designs\s\s\src\add.vhdl</SPAN><BR>
+<SPAN class=Info1>Checking Entity &quot;Add&quot;</SPAN><BR>
+<SPAN class=Info1>Checking Architecture &quot;Add&quot; of Entity &quot;Add&quot;</SPAN><BR>
+<SPAN class=Info1>File: C:\My_Designs\s\s\src\alu.vhdl</SPAN><BR>
+<SPAN class=Info1>Checking Entity &quot;ALU&quot;</SPAN><BR>
+<SPAN class=Info1>Checking Architecture &quot;ALU&quot; of Entity &quot;ALU&quot;</SPAN><BR>
+<SPAN class=Info1>File: C:\My_Designs\s\s\src\car.vhdl</SPAN><BR>
+<SPAN class=Info1>Checking Entity &quot;CAR&quot;</SPAN><BR>
+<SPAN class=Info1>Checking Architecture &quot;CAR&quot; of Entity &quot;CAR&quot;</SPAN><BR>
+<SPAN class=Info1>File: C:\My_Designs\s\s\src\cbr.vhdl</SPAN><BR>
+<SPAN class=Info1>Checking Entity &quot;CBR&quot;</SPAN><BR>
+<SPAN class=Info1>Checking Architecture &quot;CBR&quot; of Entity &quot;CBR&quot;</SPAN><BR>
+<SPAN class=Info1>File: C:\My_Designs\s\s\src\clk.vhdl</SPAN><BR>
+<SPAN class=Info1>Checking Entity &quot;PC&quot;</SPAN><BR>
+<SPAN class=Info1>Checking Architecture &quot;PC&quot; of Entity &quot;PC&quot;</SPAN><BR>
+<SPAN class=Info1>File: C:\My_Designs\s\s\src\cpu.vhdl</SPAN><BR>
+<SPAN class=Info1>Checking Entity &quot;MPA&quot;</SPAN><BR>
+<SPAN class=Info1>Checking Architecture &quot;MPA&quot; of Entity &quot;MPA&quot;</SPAN><BR>
+<SPAN class=Info1>File: C:\My_Designs\s\s\src\dc1.vhdl</SPAN><BR>
+<SPAN class=Info1>Checking Entity &quot;DC1&quot;</SPAN><BR>
+<SPAN class=Info1>Checking Architecture &quot;DC1&quot; of Entity &quot;DC1&quot;</SPAN><BR>
+<SPAN class=Info1>File: C:\My_Designs\s\s\src\inv.vhdl</SPAN><BR>
+<SPAN class=Info1>Checking Entity &quot;INV&quot;</SPAN><BR>
+<SPAN class=Info1>Checking Architecture &quot;INV&quot; of Entity &quot;INV&quot;</SPAN><BR>
+<SPAN class=Info1>File: C:\My_Designs\s\s\src\ir.vhdl</SPAN><BR>
+<SPAN class=Info1>Checking Entity &quot;IR&quot;</SPAN><BR>
+<SPAN class=Info1>Checking Architecture &quot;IR&quot; of Entity &quot;IR&quot;</SPAN><BR>
+<SPAN class=Info1>File: C:\My_Designs\s\s\src\logAnd.vhdl</SPAN><BR>
+<SPAN class=Info1>Checking Entity &quot;LogAnd&quot;</SPAN><BR>
+<SPAN class=Info1>Checking Architecture &quot;LogAnd&quot; of Entity &quot;LogAnd&quot;</SPAN><BR>
+<SPAN class=Info1>File: C:\My_Designs\s\s\src\logOr.vhdl</SPAN><BR>
+<SPAN class=Info1>Checking Entity &quot;LogOR&quot;</SPAN><BR>
+<SPAN class=Info1>Checking Architecture &quot;LogOR&quot; of Entity &quot;LogOR&quot;</SPAN><BR>
+<SPAN class=Info1>File: C:\My_Designs\s\s\src\mar.vhdl</SPAN><BR>
+<SPAN class=Info1>Checking Entity &quot;MAR&quot;</SPAN><BR>
+<SPAN class=Info1>Checking Architecture &quot;MAR&quot; of Entity &quot;MAR&quot;</SPAN><BR>
+<SPAN class=Info1>File: C:\My_Designs\s\s\src\mbr.vhdl</SPAN><BR>
+<SPAN class=Info1>Checking Entity &quot;MBR&quot;</SPAN><BR>
+<SPAN class=Info1>Checking Architecture &quot;MBR&quot; of Entity &quot;MBR&quot;</SPAN><BR>
+<SPAN class=Info1>File: C:\My_Designs\s\s\src\memory.vhdl</SPAN><BR>
+<SPAN class=Info1>Checking Entity &quot;Memory&quot;</SPAN><BR>
+<SPAN class=Info1>Checking Architecture &quot;Memory&quot; of Entity &quot;Memory&quot;</SPAN><BR>
+<SPAN class=Info1>File: C:\My_Designs\s\s\src\mux.vhdl</SPAN><BR>
+<SPAN class=Info1>Checking Entity &quot;MUX&quot;</SPAN><BR>
+<SPAN class=Info1>Checking Architecture &quot;MUX&quot; of Entity &quot;MUX&quot;</SPAN><BR>
+<SPAN class=Info1>File: C:\My_Designs\s\s\src\r_1bit.vhdl</SPAN><BR>
+<SPAN class=Info1>Checking Entity &quot;R_1bit&quot;</SPAN><BR>
+<SPAN class=Info1>Checking Architecture &quot;R_1bit&quot; of Entity &quot;R_1bit&quot;</SPAN><BR>
+<SPAN class=Info1>File: C:\My_Designs\s\s\src\ra.vhdl</SPAN><BR>
+<SPAN class=Info1>Checking Entity &quot;RA&quot;</SPAN><BR>
+<SPAN class=Info1>Checking Architecture &quot;RA&quot; of Entity &quot;RA&quot;</SPAN><BR>
+<SPAN class=Info1>File: C:\My_Designs\s\s\src\ram.vhdl</SPAN><BR>
+<SPAN class=Info1>Checking Entity &quot;RAM&quot;</SPAN><BR>
+<SPAN class=Info1>Checking Architecture &quot;RAM&quot; of Entity &quot;RAM&quot;</SPAN><BR>
+<SPAN class=Info1>File: C:\My_Designs\s\s\src\rdc.vhdl</SPAN><BR>
+<SPAN class=Info1>Checking Entity &quot;RDC&quot;</SPAN><BR>
+<SPAN class=Info1>Checking Architecture &quot;RDC&quot; of Entity &quot;RDC&quot;</SPAN><BR>
+<SPAN class=Info1>File: C:\My_Designs\s\s\src\ron.vhdl</SPAN><BR>
+<SPAN class=Info1>Checking Entity &quot;R0&quot;</SPAN><BR>
+<SPAN class=Info1>Checking Architecture &quot;R0&quot; of Entity &quot;R0&quot;</SPAN><BR>
+<SPAN class=Info1>File: C:\My_Designs\s\s\src\rz.vhdl</SPAN><BR>
+<SPAN class=Info1>Checking Entity &quot;RZ&quot;</SPAN><BR>
+<SPAN class=Info1>Checking Architecture &quot;RZ&quot; of Entity &quot;RZ&quot;</SPAN><BR>
+<SPAN class=Sccss1>Checking success 0 Errors 0 Warnings&nbsp;Analysis time :&nbsp;0.9 [s]</SPAN><BR>
+<SPAN class=Info1>Finished successfully.</SPAN><BR>
+<SPAN class=Info1> </SPAN><BR>
+<SPAN class=Info1>DIAGRAM FILES GENERATION:</SPAN><BR>
+<SPAN class=Info1> </SPAN><BR>
+<SPAN class=Info1>Generating temporary state diagram file C:\Users\D-link\AppData\Local\Temp\1086475.tmp ...<BR></SPAN><BR>
+<SPAN class=Warn1>Initial value detected for signal/variable [rez]. It will be ignored. Initial values are not suported in State Diagram.<BR></SPAN><BR>
+<SPAN class=Warn1>Conversion of the file alu.vhdl to state diagram is not possible. No proper process has been found for component: ALU.<BR></SPAN><BR>
+<SPAN class=Info1>Generating temporary state diagram file C:\Users\D-link\AppData\Local\Temp\1086479.tmp ...<BR></SPAN><BR>
+<SPAN class=Warn1>Conversion of the file cbr.vhdl to state diagram is not possible. No proper process has been found for component: CBR.<BR></SPAN><BR>
+<SPAN class=Info1>Generating temporary state diagram file C:\Users\D-link\AppData\Local\Temp\108647B.tmp ...<BR></SPAN><BR>
+<SPAN class=Warn1>Conversion of the file dc1.vhdl to state diagram is not possible. No proper process has been found for component: DC1.<BR></SPAN><BR>
+<SPAN class=Info1>Generating temporary state diagram file C:\Users\D-link\AppData\Local\Temp\12364A6.tmp ...<BR></SPAN><BR>
+<SPAN class=Warn1>Conversion of the file rdc.vhdl to state diagram is not possible. No proper process has been found for component: RDC.<BR></SPAN><BR>
+<SPAN class=Warn1>Cannot convert .\src\add.vhdl to state diagram because a state machine pattern could not be recognized.<BR></SPAN><BR>
+<SPAN class=Warn1>Cannot convert .\src\alu.vhdl to state diagram because a state machine pattern could not be recognized.<BR></SPAN><BR>
+<SPAN class=Warn1>Cannot convert .\src\car.vhdl to state diagram because a state machine pattern could not be recognized.<BR></SPAN><BR>
+<SPAN class=Warn1>Cannot convert .\src\cbr.vhdl to state diagram because a state machine pattern could not be recognized.<BR></SPAN><BR>
+<SPAN class=Warn1>Cannot convert .\src\dc1.vhdl to state diagram because a state machine pattern could not be recognized.<BR></SPAN><BR>
+<SPAN class=Warn1>Cannot convert .\src\inv.vhdl to state diagram because a state machine pattern could not be recognized.<BR></SPAN><BR>
+<SPAN class=Warn1>Cannot convert .\src\ir.vhdl to state diagram because a state machine pattern could not be recognized.<BR></SPAN><BR>
+<SPAN class=Warn1>Cannot convert .\src\logAnd.vhdl to state diagram because a state machine pattern could not be recognized.<BR></SPAN><BR>
+<SPAN class=Warn1>Cannot convert .\src\logOr.vhdl to state diagram because a state machine pattern could not be recognized.<BR></SPAN><BR>
+<SPAN class=Warn1>Cannot convert .\src\mar.vhdl to state diagram because a state machine pattern could not be recognized.<BR></SPAN><BR>
+<SPAN class=Warn1>Cannot convert .\src\mbr.vhdl to state diagram because a state machine pattern could not be recognized.<BR></SPAN><BR>
+<SPAN class=Warn1>Cannot convert .\src\memory.vhdl to state diagram because a state machine pattern could not be recognized.<BR></SPAN><BR>
+<SPAN class=Warn1>Cannot convert .\src\cpu.vhdl to state diagram because a state machine pattern could not be recognized.<BR></SPAN><BR>
+<SPAN class=Warn1>Cannot convert .\src\mux.vhdl to state diagram because a state machine pattern could not be recognized.<BR></SPAN><BR>
+<SPAN class=Warn1>Cannot convert .\src\clk.vhdl to state diagram because a state machine pattern could not be recognized.<BR></SPAN><BR>
+<SPAN class=Warn1>Cannot convert .\src\ron.vhdl to state diagram because a state machine pattern could not be recognized.<BR></SPAN><BR>
+<SPAN class=Warn1>Cannot convert .\src\ram.vhdl to state diagram because a state machine pattern could not be recognized.<BR></SPAN><BR>
+<SPAN class=Warn1>Cannot convert .\src\ra.vhdl to state diagram because a state machine pattern could not be recognized.<BR></SPAN><BR>
+<SPAN class=Warn1>Cannot convert .\src\rdc.vhdl to state diagram because a state machine pattern could not be recognized.<BR></SPAN><BR>
+<SPAN class=Warn1>Cannot convert .\src\rz.vhdl to state diagram because a state machine pattern could not be recognized.<BR></SPAN><BR>
+<SPAN class=Warn1>Cannot convert .\src\r_1bit.vhdl to state diagram because a state machine pattern could not be recognized.<BR></SPAN><BR>
+<SPAN class=Info1>Generating temporary block diagram file C:\Users\D-link\AppData\Local\Temp\1086472.tmp ...<BR>Temporary block diagram file has been successfully generated.<BR></SPAN><BR>
+<SPAN class=Info1>Generating temporary block diagram file C:\Users\D-link\AppData\Local\Temp\1086474.tmp ...<BR>Temporary block diagram file has been successfully generated.<BR></SPAN><BR>
+<SPAN class=Info1>Generating temporary block diagram file C:\Users\D-link\AppData\Local\Temp\1086476.tmp ...<BR>Temporary block diagram file has been successfully generated.<BR></SPAN><BR>
+<SPAN class=Info1>Generating temporary block diagram file C:\Users\D-link\AppData\Local\Temp\1086478.tmp ...<BR>Temporary block diagram file has been successfully generated.<BR></SPAN><BR>
+<SPAN class=Info1>Generating temporary block diagram file C:\Users\D-link\AppData\Local\Temp\108647A.tmp ...<BR>Temporary block diagram file has been successfully generated.<BR></SPAN><BR>
+<SPAN class=Info1>Generating temporary block diagram file C:\Users\D-link\AppData\Local\Temp\108647C.tmp ...<BR>Temporary block diagram file has been successfully generated.<BR></SPAN><BR>
+<SPAN class=Info1>Generating temporary block diagram file C:\Users\D-link\AppData\Local\Temp\108647E.tmp ...<BR>Temporary block diagram file has been successfully generated.<BR></SPAN><BR>
+<SPAN class=Info1>Generating temporary block diagram file C:\Users\D-link\AppData\Local\Temp\1086480.tmp ...<BR>Temporary block diagram file has been successfully generated.<BR></SPAN><BR>
+<SPAN class=Info1>Generating temporary block diagram file C:\Users\D-link\AppData\Local\Temp\1086482.tmp ...<BR>Temporary block diagram file has been successfully generated.<BR></SPAN><BR>
+<SPAN class=Info1>Generating temporary block diagram file C:\Users\D-link\AppData\Local\Temp\1086484.tmp ...<BR>Temporary block diagram file has been successfully generated.<BR></SPAN><BR>
+<SPAN class=Info1>Generating temporary block diagram file C:\Users\D-link\AppData\Local\Temp\1086486.tmp ...<BR>Temporary block diagram file has been successfully generated.<BR></SPAN><BR>
+<SPAN class=Info1>Generating temporary block diagram file C:\Users\D-link\AppData\Local\Temp\1086488.tmp ...<BR>Temporary block diagram file has been successfully generated.<BR></SPAN><BR>
+<SPAN class=Info1>Generating temporary block diagram file C:\Users\D-link\AppData\Local\Temp\108648A.tmp ...<BR>Temporary block diagram file has been successfully generated.<BR></SPAN><BR>
+<SPAN class=Info1>Generating temporary block diagram file C:\Users\D-link\AppData\Local\Temp\123649B.tmp ...<BR>Temporary block diagram file has been successfully generated.<BR></SPAN><BR>
+<SPAN class=Info1>Generating temporary block diagram file C:\Users\D-link\AppData\Local\Temp\123649D.tmp ...<BR>Temporary block diagram file has been successfully generated.<BR></SPAN><BR>
+<SPAN class=Info1>Generating temporary block diagram file C:\Users\D-link\AppData\Local\Temp\123649F.tmp ...<BR>Temporary block diagram file has been successfully generated.<BR></SPAN><BR>
+<SPAN class=Info1>Generating temporary block diagram file C:\Users\D-link\AppData\Local\Temp\12364A9.tmp ...<BR>Temporary block diagram file has been successfully generated.<BR></SPAN><BR>
+<SPAN class=Info1>Generating temporary block diagram file C:\Users\D-link\AppData\Local\Temp\12364A3.tmp ...<BR>Temporary block diagram file has been successfully generated.<BR></SPAN><BR>
+<SPAN class=Info1>Generating temporary block diagram file C:\Users\D-link\AppData\Local\Temp\12364A1.tmp ...<BR>Temporary block diagram file has been successfully generated.<BR></SPAN><BR>
+<SPAN class=Info1>Generating temporary block diagram file C:\Users\D-link\AppData\Local\Temp\12364A5.tmp ...<BR>Temporary block diagram file has been successfully generated.<BR></SPAN><BR>
+<SPAN class=Info1>Generating temporary block diagram file C:\Users\D-link\AppData\Local\Temp\12364A7.tmp ...<BR>Temporary block diagram file has been successfully generated.<BR></SPAN><BR>
+<SPAN class=Info1>Diagram file(s) generation completed in 1.170 seconds.<BR></SPAN><BR>
+<SPAN class=Info1 onclick="OpenPlugIn('Aldec.BDE.7','0','c:\\My_Designs\\s\\s\\src\\add.bde','','');">File <SPAN class=Info>c:\My_Designs\s\s\src\add.bde</SPAN> has been successfully generated.</SPAN><BR>
+<SPAN class=Info1 onclick="OpenPlugIn('Aldec.BDE.7','0','c:\\My_Designs\\s\\s\\src\\alu.bde','','');">File <SPAN class=Info>c:\My_Designs\s\s\src\alu.bde</SPAN> has been successfully generated.</SPAN><BR>
+<SPAN class=Info1 onclick="OpenPlugIn('Aldec.BDE.7','0','c:\\My_Designs\\s\\s\\src\\car.bde','','');">File <SPAN class=Info>c:\My_Designs\s\s\src\car.bde</SPAN> has been successfully generated.</SPAN><BR>
+<SPAN class=Info1 onclick="OpenPlugIn('Aldec.BDE.7','0','c:\\My_Designs\\s\\s\\src\\cbr.bde','','');">File <SPAN class=Info>c:\My_Designs\s\s\src\cbr.bde</SPAN> has been successfully generated.</SPAN><BR>
+<SPAN class=Info1 onclick="OpenPlugIn('Aldec.BDE.7','0','c:\\My_Designs\\s\\s\\src\\dc1.bde','','');">File <SPAN class=Info>c:\My_Designs\s\s\src\dc1.bde</SPAN> has been successfully generated.</SPAN><BR>
+<SPAN class=Info1 onclick="OpenPlugIn('Aldec.BDE.7','0','c:\\My_Designs\\s\\s\\src\\inv.bde','','');">File <SPAN class=Info>c:\My_Designs\s\s\src\inv.bde</SPAN> has been successfully generated.</SPAN><BR>
+<SPAN class=Info1 onclick="OpenPlugIn('Aldec.BDE.7','0','c:\\My_Designs\\s\\s\\src\\ir.bde','','');">File <SPAN class=Info>c:\My_Designs\s\s\src\ir.bde</SPAN> has been successfully generated.</SPAN><BR>
+<SPAN class=Info1 onclick="OpenPlugIn('Aldec.BDE.7','0','c:\\My_Designs\\s\\s\\src\\logand.bde','','');">File <SPAN class=Info>c:\My_Designs\s\s\src\logand.bde</SPAN> has been successfully generated.</SPAN><BR>
+<SPAN class=Info1 onclick="OpenPlugIn('Aldec.BDE.7','0','c:\\My_Designs\\s\\s\\src\\logor.bde','','');">File <SPAN class=Info>c:\My_Designs\s\s\src\logor.bde</SPAN> has been successfully generated.</SPAN><BR>
+<SPAN class=Info1 onclick="OpenPlugIn('Aldec.BDE.7','0','c:\\My_Designs\\s\\s\\src\\mar.bde','','');">File <SPAN class=Info>c:\My_Designs\s\s\src\mar.bde</SPAN> has been successfully generated.</SPAN><BR>
+<SPAN class=Info1 onclick="OpenPlugIn('Aldec.BDE.7','0','c:\\My_Designs\\s\\s\\src\\mbr.bde','','');">File <SPAN class=Info>c:\My_Designs\s\s\src\mbr.bde</SPAN> has been successfully generated.</SPAN><BR>
+<SPAN class=Info1 onclick="OpenPlugIn('Aldec.BDE.7','0','c:\\My_Designs\\s\\s\\src\\memory.bde','','');">File <SPAN class=Info>c:\My_Designs\s\s\src\memory.bde</SPAN> has been successfully generated.</SPAN><BR>
+<SPAN class=Info1 onclick="OpenPlugIn('Aldec.BDE.7','0','c:\\My_Designs\\s\\s\\src\\mpa.bde','','');">File <SPAN class=Info>c:\My_Designs\s\s\src\mpa.bde</SPAN> has been successfully generated.</SPAN><BR>
+<SPAN class=Info1 onclick="OpenPlugIn('Aldec.BDE.7','0','c:\\My_Designs\\s\\s\\src\\mux.bde','','');">File <SPAN class=Info>c:\My_Designs\s\s\src\mux.bde</SPAN> has been successfully generated.</SPAN><BR>
+<SPAN class=Info1 onclick="OpenPlugIn('Aldec.BDE.7','0','c:\\My_Designs\\s\\s\\src\\pc.bde','','');">File <SPAN class=Info>c:\My_Designs\s\s\src\pc.bde</SPAN> has been successfully generated.</SPAN><BR>
+<SPAN class=Info1 onclick="OpenPlugIn('Aldec.BDE.7','0','c:\\My_Designs\\s\\s\\src\\r0.bde','','');">File <SPAN class=Info>c:\My_Designs\s\s\src\r0.bde</SPAN> has been successfully generated.</SPAN><BR>
+<SPAN class=Info1 onclick="OpenPlugIn('Aldec.BDE.7','0','c:\\My_Designs\\s\\s\\src\\ram.bde','','');">File <SPAN class=Info>c:\My_Designs\s\s\src\ram.bde</SPAN> has been successfully generated.</SPAN><BR>
+<SPAN class=Info1 onclick="OpenPlugIn('Aldec.BDE.7','0','c:\\My_Designs\\s\\s\\src\\ra.bde','','');">File <SPAN class=Info>c:\My_Designs\s\s\src\ra.bde</SPAN> has been successfully generated.</SPAN><BR>
+<SPAN class=Info1 onclick="OpenPlugIn('Aldec.BDE.7','0','c:\\My_Designs\\s\\s\\src\\rdc.bde','','');">File <SPAN class=Info>c:\My_Designs\s\s\src\rdc.bde</SPAN> has been successfully generated.</SPAN><BR>
+<SPAN class=Info1 onclick="OpenPlugIn('Aldec.BDE.7','0','c:\\My_Designs\\s\\s\\src\\rz.bde','','');">File <SPAN class=Info>c:\My_Designs\s\s\src\rz.bde</SPAN> has been successfully generated.</SPAN><BR>
+<SPAN class=Info1 onclick="OpenPlugIn('Aldec.BDE.7','0','c:\\My_Designs\\s\\s\\src\\r_1bit.bde','','');">File <SPAN class=Info>c:\My_Designs\s\s\src\r_1bit.bde</SPAN> has been successfully generated.</SPAN><BR>
+<SPAN class=Info1> </SPAN><BR>
+<SPAN class=Info1>21 unit(s) converted to Block Diagram(s)</SPAN><BR>
+<SPAN class=Info1>0 unit(s) converted to State Diagram(s)</SPAN><BR>
+</tt>
+</FONT>
+</BODY>
+
+</HTML>

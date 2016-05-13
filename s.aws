@@ -1,0 +1,12 @@
+[Version]
+Version=7.1
+[Designs]
+s=.\s\s.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+s=1

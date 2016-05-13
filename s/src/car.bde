@@ -1,0 +1,338 @@
+SCHM0103
+
+HEADER
+{
+ FREEID 41
+ VARIABLES
+ {
+  #ARCHITECTURE="CAR"
+  #BLOCKTABLE_FILE="#HDL2DIAGRAM.bde"
+  #ENTITY="car"
+  #LANGUAGE="VHDL"
+  AUTHOR="Microsoft"
+  COMPANY="Microsoft"
+  CREATIONDATE="13.05.2016"
+  SOURCE=".\\src\\car.vhdl"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  MARGINS (200,200,200,200)
+  RECT (0,0,0,0)
+ }
+ 
+ BODY
+ {
+  VHDLDESIGNUNITHDR  1, 0, 0
+  {
+   LABEL "Design Unit Header"
+   TEXT 
+"library ieee;\n"+
+"        use ieee.std_logic_1164.all;"
+   RECT (220,260,620,439)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  PROCESS  2, 0, 0
+  {
+   LABEL "process_11"
+   TEXT 
+"process (CarIn)\n"+
+"                       begin\n"+
+"                         if CarIn = '0' and CarIn'event then\n"+
+"                            Q <= D;\n"+
+"                            CarOut <= '1';\n"+
+"                         end if;\n"+
+"                         if CarIn = '1' and CarIn'event then\n"+
+"                            CarOut <= '0';\n"+
+"                         end if;\n"+
+"                       end process;\n"+
+"                      "
+   RECT (960,240,1361,640)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWTEXT
+   VTX (  16, 19, 28, 35 )
+   VARIABLES
+   {
+    #UPDATE_SENS_LIST="0"
+   }
+   LIST (  28 )
+  }
+  INSTANCE  3, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #LIBRARY="#terminals"
+    #REFERENCE="CarIn"
+    #SYMBOL="Input"
+    #VHDL_TYPE="std_logic"
+   }
+   COORD (820,260)
+   VERTEXES ( (2,27) )
+  }
+  INSTANCE  4, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Output"
+    #LIBRARY="#terminals"
+    #REFERENCE="CarOut"
+    #SYMBOL="Output"
+    #VHDL_TYPE="std_logic"
+   }
+   COORD (1480,340)
+   VERTEXES ( (2,23) )
+  }
+  INSTANCE  5, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #LIBRARY="#terminals"
+    #REFERENCE="D(5:0)"
+    #SYMBOL="BusInput"
+    #VHDL_TYPE="std_logic_vector"
+   }
+   COORD (820,320)
+   VERTEXES ( (2,31) )
+  }
+  INSTANCE  6, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusOutput"
+    #LIBRARY="#terminals"
+    #REFERENCE="Q(5:0)"
+    #SYMBOL="BusOutput"
+    #VHDL_TYPE="std_logic_vector"
+   }
+   COORD (1480,280)
+   VERTEXES ( (2,15) )
+  }
+  TEXT  7, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (768,260,768,260)
+   ALIGN 6
+   PARENT 3
+  }
+  TEXT  8, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1532,340,1532,340)
+   ALIGN 4
+   PARENT 4
+  }
+  TEXT  9, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (768,320,768,320)
+   ALIGN 6
+   PARENT 5
+  }
+  TEXT  10, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1532,280,1532,280)
+   ALIGN 4
+   PARENT 6
+  }
+  NET WIRE  11, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="CarOut"
+    #VHDL_TYPE="std_logic"
+   }
+  }
+  NET BUS  12, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="D(5:0)"
+    #VHDL_TYPE="std_logic_vector"
+   }
+  }
+  NET BUS  13, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="Q(5:0)"
+    #VHDL_TYPE="std_logic_vector"
+   }
+  }
+  NET WIRE  14, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="CarIn"
+    #VHDL_TYPE="std_logic"
+   }
+  }
+  VTX  15, 0, 0
+  {
+   COORD (1480,280)
+  }
+  VTX  16, 0, 0
+  {
+   COORD (1361,280)
+  }
+  BUS  17, 0, 0
+  {
+   NET 13
+   VTX 15, 16
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  18, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (1420,280,1420,280)
+   ALIGN 9
+   PARENT 17
+  }
+  VTX  19, 0, 0
+  {
+   COORD (1361,260)
+  }
+  VTX  20, 0, 0
+  {
+   COORD (1460,260)
+  }
+  WIRE  21, 0, 0
+  {
+   NET 11
+   VTX 19, 20
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  22, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (1410,260,1410,260)
+   ALIGN 9
+   PARENT 21
+  }
+  VTX  23, 0, 0
+  {
+   COORD (1480,340)
+  }
+  VTX  24, 0, 0
+  {
+   COORD (1460,340)
+  }
+  WIRE  25, 0, 0
+  {
+   NET 11
+   VTX 23, 24
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  26, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (1470,340,1470,340)
+   ALIGN 9
+   PARENT 25
+  }
+  VTX  27, 0, 0
+  {
+   COORD (820,260)
+  }
+  VTX  28, 0, 0
+  {
+   COORD (960,260)
+  }
+  WIRE  29, 0, 0
+  {
+   NET 14
+   VTX 27, 28
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  30, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (890,260,890,260)
+   ALIGN 9
+   PARENT 29
+  }
+  VTX  31, 0, 0
+  {
+   COORD (820,320)
+  }
+  VTX  32, 0, 0
+  {
+   COORD (940,320)
+  }
+  BUS  33, 0, 0
+  {
+   NET 12
+   VTX 31, 32
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  34, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (880,320,880,320)
+   ALIGN 9
+   PARENT 33
+  }
+  VTX  35, 0, 0
+  {
+   COORD (960,280)
+  }
+  VTX  36, 0, 0
+  {
+   COORD (940,280)
+  }
+  BUS  37, 0, 0
+  {
+   NET 12
+   VTX 35, 36
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  38, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (950,280,950,280)
+   ALIGN 9
+   PARENT 37
+  }
+  WIRE  39, 0, 0
+  {
+   NET 11
+   VTX 20, 24
+  }
+  BUS  40, 0, 0
+  {
+   NET 12
+   VTX 36, 32
+  }
+ }
+ 
+}
+

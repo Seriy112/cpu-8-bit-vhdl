@@ -1,0 +1,265 @@
+SCHM0103
+
+HEADER
+{
+ FREEID 29
+ VARIABLES
+ {
+  #ARCHITECTURE="DC1"
+  #BLOCKTABLE_FILE="#HDL2DIAGRAM.bde"
+  #ENTITY="dc1"
+  #LANGUAGE="VHDL"
+  AUTHOR="Microsoft"
+  COMPANY="Microsoft"
+  CREATIONDATE="13.05.2016"
+  SOURCE=".\\src\\dc1.vhdl"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  MARGINS (200,200,200,200)
+  RECT (0,0,0,0)
+ }
+ 
+ BODY
+ {
+  VHDLDESIGNUNITHDR  1, 0, 0
+  {
+   LABEL "Design Unit Header"
+   TEXT 
+"library ieee;\n"+
+"        use ieee.std_logic_1164.all;"
+   RECT (220,260,620,439)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  PROCESS  2, 0, 0
+  {
+   LABEL "process_10"
+   TEXT 
+"process (Ale)\n"+
+"                       begin\n"+
+"                         if Ale = '1' and Ale'event then\n"+
+"                            if Com = \"00000000\" then\n"+
+"                               ComAdr <= \"000111\";\n"+
+"                            elsif Com = \"00000001\" then\n"+
+"                               ComAdr <= \"001110\";\n"+
+"                            elsif Com = \"00000010\" then\n"+
+"                               ComAdr <= \"011011\";\n"+
+"                            elsif Com = \"00000011\" then\n"+
+"                               ComAdr <= \"100111\";\n"+
+"                            elsif Com = \"00000100\" then\n"+
+"                               ComAdr <= \"110011\";\n"+
+"                            else \n"+
+"                               ComAdr <= \"000000\";\n"+
+"                            end if;\n"+
+"                         end if;\n"+
+"                       end process;\n"+
+"                      "
+   RECT (1000,240,1401,640)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWTEXT
+   VTX (  13, 17, 24 )
+   VARIABLES
+   {
+    #UPDATE_SENS_LIST="0"
+   }
+   LIST (  17 )
+  }
+  INSTANCE  3, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #LIBRARY="#terminals"
+    #REFERENCE="Ale"
+    #SYMBOL="Input"
+    #VHDL_TYPE="std_logic"
+   }
+   COORD (860,260)
+   VERTEXES ( (2,16) )
+  }
+  INSTANCE  4, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #LIBRARY="#terminals"
+    #REFERENCE="Com(7:0)"
+    #SYMBOL="BusInput"
+    #VHDL_TYPE="std_logic_vector"
+   }
+   COORD (860,320)
+   VERTEXES ( (2,20) )
+  }
+  INSTANCE  5, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusOutput"
+    #LIBRARY="#terminals"
+    #REFERENCE="ComAdr(5:0)"
+    #SYMBOL="BusOutput"
+    #VHDL_TYPE="std_logic_vector"
+   }
+   COORD (1500,260)
+   VERTEXES ( (2,12) )
+  }
+  TEXT  6, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (808,260,808,260)
+   ALIGN 6
+   PARENT 3
+  }
+  TEXT  7, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (808,320,808,320)
+   ALIGN 6
+   PARENT 4
+  }
+  TEXT  8, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1552,260,1552,260)
+   ALIGN 4
+   PARENT 5
+  }
+  NET BUS  9, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="Com(7:0)"
+    #VHDL_TYPE="std_logic_vector"
+   }
+  }
+  NET BUS  10, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="ComAdr(5:0)"
+    #VHDL_TYPE="std_logic_vector"
+   }
+  }
+  NET WIRE  11, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="Ale"
+    #VHDL_TYPE="std_logic"
+   }
+  }
+  VTX  12, 0, 0
+  {
+   COORD (1500,260)
+  }
+  VTX  13, 0, 0
+  {
+   COORD (1401,260)
+  }
+  BUS  14, 0, 0
+  {
+   NET 10
+   VTX 12, 13
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  15, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (1450,260,1450,260)
+   ALIGN 9
+   PARENT 14
+  }
+  VTX  16, 0, 0
+  {
+   COORD (860,260)
+  }
+  VTX  17, 0, 0
+  {
+   COORD (1000,260)
+  }
+  WIRE  18, 0, 0
+  {
+   NET 11
+   VTX 16, 17
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  19, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (930,260,930,260)
+   ALIGN 9
+   PARENT 18
+  }
+  VTX  20, 0, 0
+  {
+   COORD (860,320)
+  }
+  VTX  21, 0, 0
+  {
+   COORD (980,320)
+  }
+  BUS  22, 0, 0
+  {
+   NET 9
+   VTX 20, 21
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  23, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (920,320,920,320)
+   ALIGN 9
+   PARENT 22
+  }
+  VTX  24, 0, 0
+  {
+   COORD (1000,280)
+  }
+  VTX  25, 0, 0
+  {
+   COORD (980,280)
+  }
+  BUS  26, 0, 0
+  {
+   NET 9
+   VTX 24, 25
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  27, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (990,280,990,280)
+   ALIGN 9
+   PARENT 26
+  }
+  BUS  28, 0, 0
+  {
+   NET 9
+   VTX 25, 21
+  }
+ }
+ 
+}
+

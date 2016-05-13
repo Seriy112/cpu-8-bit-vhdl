@@ -1,0 +1,26 @@
+[Files List]
+d:\university\vhdl\Vlib\Std/src/standard.vhd=S
+d:\university\vhdl\Vlib\IEEE/src/stdlogic.vhd=S
+d:\university\vhdl\Vlib\IEEE/src/arith.vhd=S
+d:\university\vhdl\Vlib\IEEE/src/signed.vhd=S
+D:\University\Курсовая\s\s/src/r_1bit.vhdl=S
+D:\University\Курсовая\s\s/src/logOr.vhdl=S
+D:\University\Курсовая\s\s/src/clk.vhdl=S
+D:\University\Курсовая\s\s/src/cbr.vhdl=S
+D:\University\Курсовая\s\s/src/memory.vhdl=S
+D:\University\Курсовая\s\s/src/car.vhdl=S
+D:\University\Курсовая\s\s/src/add.vhdl=S
+D:\University\Курсовая\s\s/src/mux.vhdl=S
+D:\University\Курсовая\s\s/src/rdc.vhdl=S
+D:\University\Курсовая\s\s/src/inv.vhdl=S
+D:\University\Курсовая\s\s/src/rz.vhdl=S
+D:\University\Курсовая\s\s/src/dc1.vhdl=S
+D:\University\Курсовая\s\s/src/alu.vhdl=S
+D:\University\Курсовая\s\s/src/ra.vhdl=S
+D:\University\Курсовая\s\s/src/ron.vhdl=S
+D:\University\Курсовая\s\s/src/mbr.vhdl=S
+D:\University\Курсовая\s\s/src/ram.vhdl=S
+D:\University\Курсовая\s\s/src/mar.vhdl=S
+D:\University\Курсовая\s\s/src/logAnd.vhdl=S
+D:\University\Курсовая\s\s/src/ir.vhdl=S
+D:\University\Курсовая\s\s/src/cpu.vhdl=S

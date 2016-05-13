@@ -1,0 +1,37 @@
+elbread.dll ver. 1.0.5.375 Fri May 13 13:25:29 2016
+
+
+--------------------------------
+Entity  | Architecture | Library
+--------------------------------
+mpa     | mpa          | s
+ir      | ir           | s
+logand  | logand       | s
+mar     | mar          | s
+ram     | ram          | s
+mbr     | mbr          | s
+r0      | r0           | s
+ra      | ra           | s
+alu     | alu          | s
+dc1     | dc1          | s
+rz      | rz           | s
+inv     | inv          | s
+rdc     | rdc          | s
+mux     | mux          | s
+add     | add          | s
+car     | car          | s
+memory  | memory       | s
+cbr     | cbr          | s
+pc      | pc           | s
+logor   | logor        | s
+r_1bit  | r_1bit       | s
+--------------------------------
+
+---------------------------
+Package           | Library
+---------------------------
+standard          | std
+std_logic_1164    | ieee
+std_logic_arith   | ieee
+std_logic_signed  | ieee
+---------------------------

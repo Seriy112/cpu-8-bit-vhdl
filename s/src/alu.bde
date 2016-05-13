@@ -1,0 +1,594 @@
+SCHM0103
+
+HEADER
+{
+ FREEID 77
+ VARIABLES
+ {
+  #ARCHITECTURE="ALU"
+  #BLOCKTABLE_FILE="#HDL2DIAGRAM.bde"
+  #ENTITY="alu"
+  #LANGUAGE="VHDL"
+  AUTHOR="Microsoft"
+  COMPANY="Microsoft"
+  CREATIONDATE="13.05.2016"
+  SOURCE=".\\src\\alu.vhdl"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  MARGINS (200,200,200,200)
+  RECT (0,0,0,0)
+ }
+ 
+ BODY
+ {
+  VHDLDESIGNUNITHDR  1, 0, 0
+  {
+   LABEL "Design Unit Header"
+   TEXT 
+"library ieee;\n"+
+"        use ieee.std_logic_1164.all;\n"+
+"        use ieee.std_logic_signed.all;\n"+
+"        use ieee.std_logic_arith.all;"
+   RECT (220,260,620,505)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  PROCESS  2, 0, 0
+  {
+   LABEL "process_17"
+   TEXT 
+"process (CLK)\n"+
+"                       begin\n"+
+"                         if CLK = '0' and CLK'event then\n"+
+"                            FC <= '0';\n"+
+"                            if SADD = '1' then\n"+
+"                               Q <= CONV_STD_LOGIC_VECTOR((CONV_INTEGER('0' & A) + CONV_INTEGER('0' & B)),9)(7 downto 0) after 4ns;\n"+
+"                               FC <= CONV_STD_LOGIC_VECTOR((CONV_INTEGER('0' & A) + CONV_INTEGER('0' & B)),9)(8) after 4ns;\n"+
+"                            else \n"+
+"                               Q <= \"00000000\";\n"+
+"                            end if;\n"+
+"                            if A = \"00000000\" then\n"+
+"                               FZ <= '0';\n"+
+"                            else \n"+
+"                               FZ <= '1';\n"+
+"                            end if;\n"+
+"                         end if;\n"+
+"                       end process;\n"+
+"                      "
+   RECT (980,240,1381,640)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWTEXT
+   VTX (  25, 29, 37, 42, 45, 53, 61 )
+   VARIABLES
+   {
+    #UPDATE_SENS_LIST="0"
+   }
+   LIST (  53 )
+  }
+  INSTANCE  3, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #LIBRARY="#terminals"
+    #REFERENCE="A(7:0)"
+    #SYMBOL="BusInput"
+    #VHDL_TYPE="std_logic_vector"
+   }
+   COORD (800,260)
+   VERTEXES ( (2,41) )
+  }
+  INSTANCE  4, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #LIBRARY="#terminals"
+    #REFERENCE="B(7:0)"
+    #SYMBOL="BusInput"
+    #VHDL_TYPE="std_logic_vector"
+   }
+   COORD (800,320)
+   VERTEXES ( (2,49) )
+  }
+  INSTANCE  5, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #LIBRARY="#terminals"
+    #REFERENCE="CLK"
+    #SYMBOL="Input"
+    #VHDL_TYPE="std_logic"
+   }
+   COORD (800,380)
+   VERTEXES ( (2,57) )
+  }
+  INSTANCE  6, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Output"
+    #LIBRARY="#terminals"
+    #REFERENCE="FC"
+    #SYMBOL="Output"
+    #VHDL_TYPE="std_logic"
+   }
+   COORD (1500,260)
+   VERTEXES ( (2,26) )
+  }
+  INSTANCE  7, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Output"
+    #LIBRARY="#terminals"
+    #REFERENCE="FZ"
+    #SYMBOL="Output"
+    #VHDL_TYPE="std_logic"
+   }
+   COORD (1500,360)
+   VERTEXES ( (2,33) )
+  }
+  INSTANCE  8, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusOutput"
+    #LIBRARY="#terminals"
+    #REFERENCE="Q(7:0)"
+    #SYMBOL="BusOutput"
+    #VHDL_TYPE="std_logic_vector"
+   }
+   COORD (1500,300)
+   VERTEXES ( (2,30) )
+  }
+  INSTANCE  9, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #LIBRARY="#terminals"
+    #REFERENCE="SADD"
+    #SYMBOL="Input"
+    #VHDL_TYPE="std_logic"
+   }
+   COORD (800,440)
+   VERTEXES ( (2,65) )
+  }
+  TEXT  10, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (748,260,748,260)
+   ALIGN 6
+   PARENT 3
+  }
+  TEXT  11, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (748,320,748,320)
+   ALIGN 6
+   PARENT 4
+  }
+  TEXT  12, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (748,380,748,380)
+   ALIGN 6
+   PARENT 5
+  }
+  TEXT  13, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1552,260,1552,260)
+   ALIGN 4
+   PARENT 6
+  }
+  TEXT  14, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1552,360,1552,360)
+   ALIGN 4
+   PARENT 7
+  }
+  TEXT  15, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1552,300,1552,300)
+   ALIGN 4
+   PARENT 8
+  }
+  TEXT  16, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (748,440,748,440)
+   ALIGN 6
+   PARENT 9
+  }
+  NET BUS  17, 0, 0
+  {
+   VARIABLES
+   {
+    #INITIAL_VALUE="\"00000000\""
+    #NAME="rez(7:0)"
+    #VHDL_TYPE="std_logic_vector"
+   }
+  }
+  NET BUS  18, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="A(7:0)"
+    #VHDL_TYPE="std_logic_vector"
+   }
+  }
+  NET BUS  19, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="B(7:0)"
+    #VHDL_TYPE="std_logic_vector"
+   }
+  }
+  NET WIRE  20, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="FC"
+    #VHDL_TYPE="std_logic"
+   }
+  }
+  NET WIRE  21, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="FZ"
+    #VHDL_TYPE="std_logic"
+   }
+  }
+  NET BUS  22, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="Q(7:0)"
+    #VHDL_TYPE="std_logic_vector"
+   }
+  }
+  NET WIRE  23, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="SADD"
+    #VHDL_TYPE="std_logic"
+   }
+  }
+  NET WIRE  24, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="CLK"
+    #VHDL_TYPE="std_logic"
+   }
+  }
+  VTX  25, 0, 0
+  {
+   COORD (1381,260)
+  }
+  VTX  26, 0, 0
+  {
+   COORD (1500,260)
+  }
+  WIRE  27, 0, 0
+  {
+   NET 20
+   VTX 25, 26
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  28, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (1440,260,1440,260)
+   ALIGN 9
+   PARENT 27
+  }
+  VTX  29, 0, 0
+  {
+   COORD (1381,300)
+  }
+  VTX  30, 0, 0
+  {
+   COORD (1500,300)
+  }
+  BUS  31, 0, 0
+  {
+   NET 22
+   VTX 29, 30
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  32, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (1440,300,1440,300)
+   ALIGN 9
+   PARENT 31
+  }
+  VTX  33, 0, 0
+  {
+   COORD (1500,360)
+  }
+  VTX  34, 0, 0
+  {
+   COORD (1480,360)
+  }
+  WIRE  35, 0, 0
+  {
+   NET 21
+   VTX 33, 34
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  36, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (1490,360,1490,360)
+   ALIGN 9
+   PARENT 35
+  }
+  VTX  37, 0, 0
+  {
+   COORD (1381,280)
+  }
+  VTX  38, 0, 0
+  {
+   COORD (1480,280)
+  }
+  WIRE  39, 0, 0
+  {
+   NET 21
+   VTX 37, 38
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  40, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (1430,280,1430,280)
+   ALIGN 9
+   PARENT 39
+  }
+  VTX  41, 0, 0
+  {
+   COORD (800,260)
+  }
+  VTX  42, 0, 0
+  {
+   COORD (980,260)
+  }
+  BUS  43, 0, 0
+  {
+   NET 18
+   VTX 41, 42
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  44, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (890,260,890,260)
+   ALIGN 9
+   PARENT 43
+  }
+  VTX  45, 0, 0
+  {
+   COORD (980,280)
+  }
+  VTX  46, 0, 0
+  {
+   COORD (920,280)
+  }
+  BUS  47, 0, 0
+  {
+   NET 19
+   VTX 45, 46
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  48, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (950,280,950,280)
+   ALIGN 9
+   PARENT 47
+  }
+  VTX  49, 0, 0
+  {
+   COORD (800,320)
+  }
+  VTX  50, 0, 0
+  {
+   COORD (920,320)
+  }
+  BUS  51, 0, 0
+  {
+   NET 19
+   VTX 49, 50
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  52, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (860,320,860,320)
+   ALIGN 9
+   PARENT 51
+  }
+  VTX  53, 0, 0
+  {
+   COORD (980,300)
+  }
+  VTX  54, 0, 0
+  {
+   COORD (940,300)
+  }
+  WIRE  55, 0, 0
+  {
+   NET 24
+   VTX 53, 54
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  56, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (960,300,960,300)
+   ALIGN 9
+   PARENT 55
+  }
+  VTX  57, 0, 0
+  {
+   COORD (800,380)
+  }
+  VTX  58, 0, 0
+  {
+   COORD (940,380)
+  }
+  WIRE  59, 0, 0
+  {
+   NET 24
+   VTX 57, 58
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  60, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (870,380,870,380)
+   ALIGN 9
+   PARENT 59
+  }
+  VTX  61, 0, 0
+  {
+   COORD (980,320)
+  }
+  VTX  62, 0, 0
+  {
+   COORD (960,320)
+  }
+  WIRE  63, 0, 0
+  {
+   NET 23
+   VTX 61, 62
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  64, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (970,320,970,320)
+   ALIGN 9
+   PARENT 63
+  }
+  VTX  65, 0, 0
+  {
+   COORD (800,440)
+  }
+  VTX  66, 0, 0
+  {
+   COORD (960,440)
+  }
+  WIRE  67, 0, 0
+  {
+   NET 23
+   VTX 65, 66
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  68, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (880,440,880,440)
+   ALIGN 9
+   PARENT 67
+  }
+  VTX  69, 0, 0
+  {
+   COORD (1571,220)
+  }
+  VTX  70, 0, 0
+  {
+   COORD (1671,220)
+  }
+  BUS  71, 0, 0
+  {
+   NET 17
+   VTX 69, 70
+   VARIABLES
+   {
+    #NAMED="1"
+   }
+  }
+  TEXT  72, 0, 1
+  {
+   TEXT "$#NAME"
+   RECT (1621,220,1621,220)
+   ALIGN 9
+   PARENT 71
+  }
+  BUS  73, 0, 0
+  {
+   NET 19
+   VTX 46, 50
+  }
+  WIRE  74, 0, 0
+  {
+   NET 21
+   VTX 38, 34
+  }
+  WIRE  75, 0, 0
+  {
+   NET 23
+   VTX 62, 66
+  }
+  WIRE  76, 0, 0
+  {
+   NET 24
+   VTX 54, 58
+  }
+ }
+ 
+}
+

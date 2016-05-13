@@ -1,0 +1,187 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=1
+Current Config=compile
+
+[Configurations]
+compile=s
+
+[Library]
+s=.\s.lib
+
+[$LibMap$]
+s=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+SYNTH_TOOL=<none>
+IMPL_TOOL=<none>
+CSYNTH_TOOL=<none>
+PHYSSYNTH_TOOL=<none>
+FLOWTOOLS=ONLY_IMPL
+ON_SERVERFARM_SYNTH=0
+ON_SERVERFARM_IMPL=0
+ON_SERVERFARM_SIM=0
+DVM_DISPLAY=NO
+FAMILY=
+
+[IMPLEMENTATION]
+UCF=
+
+[Files]
+/add.vhdl=-1
+/alu.vhdl=-1
+/car.vhdl=-1
+/cbr.vhdl=-1
+/clk.vhdl=-1
+/cpu.vhdl=-1
+/dc1.vhdl=-1
+/inv.vhdl=-1
+/ir.vhdl=-1
+/logAnd.vhdl=-1
+/logOr.vhdl=-1
+/mar.vhdl=-1
+/mbr.vhdl=-1
+/memory.vhdl=-1
+/mux.vhdl=-1
+/ra.vhdl=-1
+/ram.vhdl=-1
+/rdc.vhdl=-1
+/ron.vhdl=-1
+/rz.vhdl=-1
+/r_1bit.vhdl=-1
+/add.bde=-1
+/alu.bde=-1
+/car.bde=-1
+/cbr.bde=-1
+/dc1.bde=-1
+/inv.bde=-1
+/ir.bde=-1
+/logand.bde=-1
+/logor.bde=-1
+/mar.bde=-1
+/mbr.bde=-1
+/memory.bde=-1
+/mpa.bde=-1
+/mux.bde=-1
+/pc.bde=-1
+/r0.bde=-1
+/ram.bde=-1
+/ra.bde=-1
+/rdc.bde=-1
+/rz.bde=-1
+/r_1bit.bde=-1
+/D:\University\Курсовая\s\cpu.awf=-1
+
+[Files.Data]
+.\src\add.vhdl=VHDL Source Code
+.\src\alu.vhdl=VHDL Source Code
+.\src\car.vhdl=VHDL Source Code
+.\src\cbr.vhdl=VHDL Source Code
+.\src\clk.vhdl=VHDL Source Code
+.\src\cpu.vhdl=VHDL Source Code
+.\src\dc1.vhdl=VHDL Source Code
+.\src\inv.vhdl=VHDL Source Code
+.\src\ir.vhdl=VHDL Source Code
+.\src\logAnd.vhdl=VHDL Source Code
+.\src\logOr.vhdl=VHDL Source Code
+.\src\mar.vhdl=VHDL Source Code
+.\src\mbr.vhdl=VHDL Source Code
+.\src\memory.vhdl=VHDL Source Code
+.\src\mux.vhdl=VHDL Source Code
+.\src\ra.vhdl=VHDL Source Code
+.\src\ram.vhdl=VHDL Source Code
+.\src\rdc.vhdl=VHDL Source Code
+.\src\ron.vhdl=VHDL Source Code
+.\src\rz.vhdl=VHDL Source Code
+.\src\r_1bit.vhdl=VHDL Source Code
+.\src\add.bde=Block Diagram
+.\src\alu.bde=Block Diagram
+.\src\car.bde=Block Diagram
+.\src\cbr.bde=Block Diagram
+.\src\dc1.bde=Block Diagram
+.\src\inv.bde=Block Diagram
+.\src\ir.bde=Block Diagram
+.\src\logand.bde=Block Diagram
+.\src\logor.bde=Block Diagram
+.\src\mar.bde=Block Diagram
+.\src\mbr.bde=Block Diagram
+.\src\memory.bde=Block Diagram
+.\src\mpa.bde=Block Diagram
+.\src\mux.bde=Block Diagram
+.\src\pc.bde=Block Diagram
+.\src\r0.bde=Block Diagram
+.\src\ram.bde=Block Diagram
+.\src\ra.bde=Block Diagram
+.\src\rdc.bde=Block Diagram
+.\src\rz.bde=Block Diagram
+.\src\r_1bit.bde=Block Diagram
+D:\University\Курсовая\s\cpu.awf=Waveform File
+
+[file_out:/add.bde]
+/\compile\add.vhd=-1
+
+[file_out:/alu.bde]
+/\compile\alu.vhd=-1
+
+[file_out:/car.bde]
+/\compile\car.vhd=-1
+
+[file_out:/cbr.bde]
+/\compile\cbr.vhd=-1
+
+[file_out:/dc1.bde]
+/\compile\dc1.vhd=-1
+
+[file_out:/inv.bde]
+/\compile\inv.vhd=-1
+
+[file_out:/ir.bde]
+/\compile\ir.vhd=-1
+
+[file_out:/logand.bde]
+/\compile\logand.vhd=-1
+
+[file_out:/logor.bde]
+/\compile\logor.vhd=-1
+
+[file_out:/mar.bde]
+/\compile\mar.vhd=-1
+
+[file_out:/mbr.bde]
+/\compile\mbr.vhd=-1
+
+[file_out:/memory.bde]
+/\compile\memory.vhd=-1
+
+[file_out:/mpa.bde]
+/\compile\mpa.vhd=-1
+
+[file_out:/mux.bde]
+/\compile\mux.vhd=-1
+
+[file_out:/pc.bde]
+/\compile\pc.vhd=-1
+
+[file_out:/r0.bde]
+/\compile\r0.vhd=-1
+
+[file_out:/ram.bde]
+/\compile\ram.vhd=-1
+
+[file_out:/ra.bde]
+/\compile\ra.vhd=-1
+
+[file_out:/rdc.bde]
+/\compile\rdc.vhd=-1
+
+[file_out:/rz.bde]
+/\compile\rz.vhd=-1
+
+[file_out:/r_1bit.bde]
+/\compile\r_1bit.vhd=-1
+
